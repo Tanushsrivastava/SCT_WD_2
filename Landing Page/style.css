@@ -1,0 +1,206 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#0b0f1a;
+    color:#fff;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    width:90%;
+    top:10px;
+    left:50%;
+    transform:translateX(-50%);
+
+    display:flex;
+    justify-content:space-between;
+    padding:15px 40px;
+    z-index:1000;
+
+    background:rgba(0,0,0,0.4);
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(0,234,255,0.3);
+    border-radius:12px;
+
+    transition:0.4s;
+}
+
+/* Scroll effect */
+nav.scrolled{
+    background:rgba(0,0,0,0.85);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(0,234,255,0.6);
+    box-shadow:0 0 20px rgba(0,234,255,0.4);
+}
+
+/* Logo */
+.logo{
+    font-size:22px;
+    font-weight:600;
+    color:#00eaff;
+}
+
+/* Menu */
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin:0 15px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+    position:relative;
+}
+
+/* Hover effect */
+nav ul li a:hover{
+    color:#00eaff;
+}
+
+/* Underline animation */
+nav ul li a::after{
+    content:"";
+    position:absolute;
+    width:0%;
+    height:2px;
+    background:#00eaff;
+    left:0;
+    bottom:-5px;
+    transition:0.3s;
+}
+
+nav ul li a:hover::after{
+    width:100%;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:url("https://images.unsplash.com/photo-1492724441997-5dc865305da7") center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero-text{
+    background:rgba(0,0,0,0.6);
+    padding:40px;
+    border-radius:10px;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero button{
+    margin-top:20px;
+    padding:12px 25px;
+    background:#00eaff;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/* SERVICES */
+.services{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.service-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.service-card{
+    width:300px;
+    background:#111827;
+    border-radius:10px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.service-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px #00eaff;
+}
+
+.service-card h3{
+    margin:15px;
+}
+
+.service-card p{
+    margin:0 15px 20px;
+}
+
+/* ABOUT */
+.about{
+    background:url("https://images.unsplash.com/photo-1492724441997-5dc865305da7") center/cover no-repeat;
+    
+    padding:100px 20px;
+    
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+    width:90%;
+    margin:60px auto;
+    border-radius:20px;
+    overflow:hidden;
+}
+/* CONTACT */
+.contact{
+    background:url("https://images.unsplash.com/photo-1521791136064-7986c2920216") center/cover no-repeat;
+    
+    padding:100px 20px;   /* 👈 height hata ke padding */
+    
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+    width:90%;
+    margin:60px auto;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#000;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    nav ul{
+        display:none;
+    }
+
+    .hero h1{
+        font-size:30px;
+    }
+}
