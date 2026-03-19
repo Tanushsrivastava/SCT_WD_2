@@ -1,0 +1,136 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-45deg, #020024, #090979, #00d4ff, #020024);
+    background-size: 400% 400%;
+    animation: gradientFlow 12s ease infinite;
+    color: #fff;
+}
+
+/* 🔥 Background Flow */
+@keyframes gradientFlow {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* 🔥 CARD (Main Panel) */
+.glass {
+    background: rgba(10, 20, 40, 0.95);
+    border-radius: 20px;
+    padding: 30px;
+    width: 380px;
+    box-shadow: 
+        0 0 10px rgba(0,255,255,0.3),
+        0 0 30px rgba(0,255,255,0.2),
+        inset 0 0 10px rgba(255,255,255,0.05);
+}
+
+/* 🔥 Heading */
+h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff;
+}
+
+/* 🔥 Inputs FIX */
+.form-control, .form-select {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid #00eaff;
+    color: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* 🔥 DROPDOWN FIX (IMPORTANT) */
+select {
+    background: #0b132b !important;
+    color: #ffffff !important;
+}
+
+select option {
+    background: #0b132b;
+    color: #ffffff;
+}
+
+/* 🔥 Placeholder */
+.form-control::placeholder {
+    color: #ccc;
+}
+
+/* 🔥 Button */
+.btn-glow {
+    background: linear-gradient(45deg, #00eaff, #0072ff);
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn-glow:hover {
+    box-shadow: 0 0 15px #00eaff, 0 0 30px #0072ff;
+    transform: scale(1.05);
+}
+
+/* 🔥 Question */
+#question {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+/* 🔥 Options */
+.option {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid #00eaff;
+    color: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    transition: 0.2s;
+}
+
+.option:hover {
+    background: #00eaff;
+    color: #000;
+}
+
+/* 🔥 Timer + Question No */
+#questionNo, #timer {
+    font-weight: bold;
+    color: #00eaff;
+}
+
+/* 🔥 Leaderboard Title */
+h5 {
+    color: #00eaff;
+    text-shadow: 0 0 8px #00eaff;
+    margin-top: 20px;
+}
+
+/* 🔥 Leaderboard */
+.list-group-item {
+    background: rgba(0,0,0,0.8);
+    border: 1px solid #00eaff;
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 12px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.list-group-item:hover {
+    box-shadow: 0 0 10px #00eaff;
+}
+
+/* 🔥 Spacing Fix */
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
